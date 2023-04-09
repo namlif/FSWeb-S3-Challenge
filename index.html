@@ -4,53 +4,60 @@
 
 <head>
 	<meta charset="utf-8">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sprint Challenge - Anasayfa</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/"/>
+	<link rel="stylesheet" href="css/index.css"/>
 </head>
 
 <body>
 	<div>
 		<!-- header -->
 		<header>
-			<div>
-				ERGİNEER BAR VE MANGAL
+				<a href="index.html"><h1>ERGİNEER BAR VE MANGAL</h1></a>
+				<nav class="header-section">
+					<div class="menü">
+								<a href="./menu.html">Menü</a>
+								<a href="#">Rezervasyonlar</a>
+								<a href="#">Özel Teklifler</a>
+								<a href="#">İletişim</a>
+					</div>
 
-				<!-- nav -->
-				Menü
-				Rezervasyonlar
-				Özel Teklifler
-				İletişim
-			</div>
+					<div class="sosyal" >
+						<i class="fa-brands fa-square-facebook" title="facebook"></i>
+						<i class="fa-brands fa-square-instagram" title="instagram"></i>
+						<i class="fa-brands fa-square-twitter" title="twitter"></i>
+					</div>
+				</nav>
 		</header>
 
 		<!-- gallery section -->
-		<section class="gallery">
-			<div>
-				<h2>YEMEKLERİMİZ</h2>
+		
+		<div class="gallery">
+			<h2>YEMEKLERİMİZ</h2>
 
-				img/food-avocadotoast.jpg
-
-				img/food-burger.jpg
-
-				img/food-poutine.jpg
-
-				img/food-ribs.jpg
-
-				img/food-sandwich.jpg
-
-				img/food-sausage.jpg
-
-				img/food-steak.jpg
-
-				img/food-tacos.jpg
-
-				img/food-wings.jpg
+			<div class="top">
+				<img src="./img/food-avocadotoast.jpg"/>
+				<img src="./img/food-burger.jpg"/>
+				<img src="./img/food-poutine.jpg"/>
 			</div>
-		</section>
 
+			<div class="middle">
+				<img src="./img/food-ribs.jpg"/>
+				<img src="./img/food-sandwich.jpg"/>
+				<img src="./img/food-sausage.jpg"/>
+			</div>
+
+			<div class="bottom">
+				<img src="./img/food-steak.jpg"/>
+				<img src="./img/food-tacos.jpg"/>
+				<img src="./img/food-wings.jpg"/>
+			</div>
+		</div>
+		
 		<!-- spacer -->
 		<div class="spacer"></div>
 
@@ -64,13 +71,13 @@
 
 				<div class="text">
 					<h3>Güzel Yemekler, Güzel İnsanlar</h3>
-					<p>Quis duis aute, shank ut pork eiusmod in ball tip jerky non. Short ribs tail dolore, fatback in
+					<p>"Quis duis aute, shank ut pork eiusmod in ball tip jerky non. Short ribs tail dolore, fatback in
 						tempor meatloaf pig sunt porchetta beef. Ad hamburger pig veniam, andouille exercitation cillum
 						eiusmod doner irure tail burgdoggen rump chislic officia. Pancetta frankfurter sed, est t-bone
 						porchetta capicola id tri-tip cillum cow leberkas do minim. Sausage ea velit boudin laboris
 						dolore
 						short loin corned beef commodo jowl beef dolor tempor. Dolor culpa enim in meatloaf, ham mollit
-						shankle duis chicken dolore andouille do tenderloin qui.</p>
+						shankle duis chicken dolore andouille do tenderloin qui."</p>
 				</div>
 
 				<div id="bartender" class="pic">
@@ -91,7 +98,7 @@
 						<h3>Adres</h3>
 
 						<address>
-							<p>100. sokak</p>
+							<p>100. Sokak</p>
 							<p>Oran, Ankara</p>
 						</address>
 					</div>
@@ -102,7 +109,7 @@
 						<div>
 							<p>Pazartesiden Cumaya:</p>
 							<p>10:00 - 22:00</p>
-							<p>Friday and Saturday:</p>
+							<p>Cumartesi ve Pazar:</p>
 							<p>10:00 - 02:00</p>
 						</div>
 					</div>
@@ -111,7 +118,7 @@
 						<h3>İletişim</h3>
 
 						<div>
-							<a id="phone" href="tel:999-999-9999">999-999-9999</a>
+							<a id="phone" href="tel:999-999-999">999-999-999</a>
 							<a id="email" href="mailto:restoran@boomer.com">restoran@ergineer.com</a>
 						</div>
 					</div>
@@ -123,17 +130,25 @@
 		<div class="spacer-sm"></div>
 
 		<!-- footer -->
-		<footer>
-			<!-- email signup -->
-			Mail listemize katılın!
-			Üye Ol
-			<!-- nav -->
-			Menü
-			Rezervasyonlar
-			Özel Teklifler
-			İletişim
-			<!-- copyright -->
-			©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
+		<footer>	
+			<div class="mail">
+				<p style="margin-left: 5vh;">Mail listemize katılın</p>
+				<input type="email" placeholder="E-posta Adresi"/>
+				<button type="button" > Üye Ol </button>
+			</div>
+			
+			<div class="altsag">
+				<nav class="altmenü">
+						<a href="./menu.html">Menü</a>
+						<a href="#">Rezervasyonlar</a>
+						<a href="#">Özel Teklifler</a>
+						<a href="#">İletişim</a>
+				</nav>
+				
+				<div class="copyright">
+					<p style="color: white;">©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.</p>
+				</div>
+			</div>
 		</footer>
 	</div>
 </body>
